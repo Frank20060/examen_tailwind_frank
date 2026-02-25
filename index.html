@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ConcertHub</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+    <style type="text/tailwindcss">
+      @theme {
+        --color-rosita: #ff0082;
+        --color-bold: #282831;
+        --color-ligth: #515162;
+        --input-banner: #3d3d49;
+      }
+    </style>
+  </head>
+  <body class="w-screen h-screen text-inter text-[#282831]">
+    <header class="w-full h-10 md:h-[136px]">
+      <nav class="w-full h-full flex justify-between items-center px-10">
+        <!-- Logo -->
+        <img
+          src="img/header/Logo.svg"
+          alt="Logo"
+          class="md:w-48 md:h-14 w-18 h-[22px]"
+        />
+
+        <!-- Nav desktop -->
+        <ul class="hidden md:flex gap-8 items-center">
+          <li class="flex items-center gap-2">
+            <img src="img/header/call.svg" alt="icon Phone" /> Contact us
+          </li>
+          <li class="flex items-center gap-2">
+            <img src="img/header/ticket.svg" alt="icon ticket" /> Tickets
+          </li>
+          <li class="flex items-center gap-2">
+            <img src="img/header/document.svg" alt="icon document" /> Blogs
+          </li>
+          <li>
+            <select name="language" id="selectLanguage" class="text-black">
+              <option value="En">En</option>
+              <option value="Es">Es</option>
+              <option value="De">De</option>
+              <option value="Fr">Fr</option>
+            </select>
+          </li>
+          <li class="flex items-center gap-2">
+            <img src="img/header/user.svg" alt="icon User" /> Login
+          </li>
+        </ul>
+
+        <!-- Nav mobile -->
+        <ul class="flex md:hidden gap-4 items-center">
+          <li>
+            <img src="img/header/profile-circle.svg" alt="icono perfil" />
+          </li>
+          <li>
+            <img src="img/header/menu.svg" alt="icono menu" />
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="baner" class="relative">
+        <!-- Banner -->
+        <div
+          class="relative w-[328px] h-[312px] mt-4 mx-auto overflow-hidden rounded-2xl z-10"
+        >
+          <img
+            class="w-full h-full object-cover"
+            src="img/baner/Banner photo.svg"
+            alt="img del banner de una señora cantando"
+          />
+
+          <div
+            class="absolute bottom-0 w-full bg-white/80 backdrop-blur-md p-4"
+          >
+            <h1 class="font-bold text-lg text-black">
+              Beyoncé Live in Concert!
+            </h1>
+            <p class="text-gray-700">A night to Remember!</p>
+          </div>
+        </div>
+
+        <!-- Search (metido debajo del banner) -->
+        <div
+          id="search"
+          class="bg-[#3D3D49] h-[168px] -mt-10 pt-14 relative z-0"
+        >
+          <div class="w-[328px] mx-auto flex flex-col gap-4">
+            <input
+              type="text"
+              placeholder="Search by Artist, Event or Venue"
+              class="bg-gray-400 text-black placeholder:text-white opacity-80 rounded-md w-full p-2"
+            />
+
+            <div class="flex gap-2 flex-wrap">
+              <button
+                class="bg-gray-400 text-white opacity-80 rounded-md px-3 py-1"
+              >
+                #Summer
+              </button>
+              <button
+                class="bg-gray-400 text-white opacity-80 rounded-md px-3 py-1"
+              >
+                #Jazz
+              </button>
+              <button
+                class="bg-gray-400 text-white opacity-80 rounded-md px-3 py-1"
+              >
+                #TaylorSwift
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="upcoming-concerts" class="w-full py-2">
+        <div class="flex justify-between p-5">
+          <h1 class="font-medium text-[18px]">Upcoming concerts</h1>
+          <a href="#" class="font-normal text-[18px]">See All</a>
+        </div>
+
+        <div
+          class="flex gap-4 px-5 overflow-x-auto whitespace-nowrap scroll-smooth"
+        >
+          <div class="card min-w-[242px]">
+            <div class="rounded-md h-40 overflow-x-hidden">
+              <img
+                src="img/artistas/Frame 427319938.svg"
+                alt=""
+                class="rounded-md w-[242px]"
+              />
+            </div>
+
+            <h1 class="text-[16px] w-full text-center font-medium">
+              Taylor Swift
+            </h1>
+            <p class="text-[14px] w-full text-center">San Diego</p>
+            <p class="text-[14px] w-full text-center">Dec 14, 21:00</p>
+            <p class="hidden text-[14px] text-red-600 w-full text-center">
+              100€
+            </p>
+          </div>
+
+          <div class="card min-w-[242px]">
+            <div class="rounded-md h-40 overflow-x-hidden">
+              <img
+                src="img/artistas/Frame 427319938-7.svg"
+                alt=""
+                class="rounded-md w-[242px]"
+              />
+            </div>
+
+            <h1 class="text-[16px] w-full text-center font-medium">
+              Celine Dion
+            </h1>
+            <p class="text-[14px] w-full text-center">New York City</p>
+            <p class="text-[14px] w-full text-center">Dec 13, 21:00</p>
+            <p class="hidden text-[14px] text-red-600 w-full text-center">
+              50€
+            </p>
+          </div>
+
+          <div class="card min-w-[242px]">
+            <div class="rounded-md h-40 overflow-x-hidden">
+              <img
+                src="img/artistas/Frame 427319938-2.svg"
+                alt=""
+                class="rounded-md w-[242px]"
+              />
+            </div>
+
+            <h1 class="text-[16px] w-full text-center font-medium">
+              Justin Bieber
+            </h1>
+            <p class="text-[14px] w-full text-center">San Francisco</p>
+            <p class="text-[14px] w-full text-center">Dec 16, 20:00</p>
+            <p class="hidden text-[14px] text-red-600 w-full text-center">
+              60€
+            </p>
+          </div>
+
+          <div class="card min-w-[242px] mb-2">
+            <div class="rounded-md h-40 overflow-x-hidden">
+              <img
+                src="img/artistas/Frame 427319938-6.svg"
+                alt=""
+                class="rounded-md w-[242px]"
+              />
+            </div>
+
+            <h1 class="text-[16px] w-full text-center font-medium">
+              Sila Gencoglu
+            </h1>
+            <p class="text-[14px] w-full text-center">Boston</p>
+            <p class="text-[14px] w-full text-center">Dec 18, 22:00</p>
+            <p class="hidden text-[14px] text-red-600 w-full text-center">
+              20€
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="w-full py-2">
+        <div class="flex justify-between p-5">
+          <h1 class="font-medium text-[18px]">Pupular near you</h1>
+          <a href="#" class="font-normal text-[18px]">See All</a>
+        </div>
+
+        <div
+          class="flex gap-4 px-5 overflow-x-auto whitespace-nowrap scroll-smooth"
+        >
+          <div class="card min-w-[242px]">
+            <div class="rounded-md h-40 overflow-x-hidden">
+              <img
+                src="img/artistas/Frame 427319938-1.svg"
+                alt=""
+                class="rounded-md w-[242px]"
+              />
+            </div>
+
+            <h1 class="text-[16px] w-full text-center font-medium">
+              JeJennifer Lopeznifer
+            </h1>
+            <p class="text-[14px] w-full text-center">Seattle</p>
+            <p class="text-[14px] w-full text-center">Dec 12, 21:00</p>
+            <p class="hidden text-[14px] text-red-600 w-full text-center">
+              70€
+            </p>
+          </div>
+
+          <div class="card min-w-[242px]">
+            <div class="rounded-md h-40 overflow-x-hidden">
+              <img
+                src="img/artistas/Frame 427319938-3.svg"
+                alt=""
+                class="rounded-md w-[242px]"
+              />
+            </div>
+
+            <h1 class="text-[16px] w-full text-center font-medium">
+              Zach Bryan
+            </h1>
+            <p class="text-[14px] w-full text-center">Miami</p>
+            <p class="text-[14px] w-full text-center">Dec 08, 22:00</p>
+            <p class="hidden text-[14px] text-red-600 w-full text-center">
+              60€
+            </p>
+          </div>
+
+          <div class="card min-w-[242px]">
+            <div class="rounded-md h-40 overflow-x-hidden">
+              <img
+                src="img/artistas/Frame 427319938-5.svg"
+                alt=""
+                class="rounded-md w-[242px]"
+              />
+            </div>
+
+            <h1 class="text-[16px] w-full text-center font-medium">Usher</h1>
+            <p class="text-[14px] w-full text-center">Los Angeles</p>
+            <p class="text-[14px] w-full text-center">Dec 04, 21:00</p>
+            <p class="hidden text-[14px] text-red-600 w-full text-center">
+              30€
+            </p>
+          </div>
+
+          <div class="card min-w-[242px] mb-2">
+            <div class="rounded-md h-40 overflow-x-hidden">
+              <img
+                src="img/artistas/Frame 427319938-4.svg"
+                alt=""
+                class="rounded-md w-[242px]"
+              />
+            </div>
+
+            <h1 class="text-[16px] w-full text-center font-medium">Adele</h1>
+            <p class="text-[14px] w-full text-center">Las Vegas</p>
+            <p class="text-[14px] w-full text-center">Dec 03, 20:00</p>
+            <p class="hidden text-[14px] text-red-600 w-full text-center">
+              50€
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-5">
+        <h1 class="font-medium text-[18px]">Explore by category</h1>
+
+        <div
+          class="flex gap-4 mt-4 overflow-x-auto whitespace-nowrap scroll-smooth"
+        >
+          <div class="relative w-[242px] overflow-hidden rounded-2xl shrink-0">
+            <img
+              src="img/imgCategorias/Category Final.svg"
+              alt="Folk category"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute bottom-0 w-full bg-black/80 backdrop-blur-md p-4"
+            >
+              <h2 class="font-bold text-lg text-white">Folk</h2>
+            </div>
+          </div>
+          <div class="relative w-[242px] overflow-hidden rounded-2xl shrink-0">
+            <img
+              src="img/imgCategorias/Category Final-1.svg"
+              alt="Classic category"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute bottom-0 w-full bg-black/80 backdrop-blur-md p-4"
+            >
+              <h2 class="font-bold text-lg text-white text-center">Classic</h2>
+            </div>
+          </div>
+          <div class="relative w-[242px] overflow-hidden rounded-2xl shrink-0">
+            <img
+              src="img/imgCategorias/Category Final-2.svg"
+              alt="Folk category"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute bottom-0 w-full bg-black/80 backdrop-blur-md p-4"
+            >
+              <h2 class="font-bold text-lg text-white">Pop</h2>
+            </div>
+          </div>
+          <div class="relative w-[242px] overflow-hidden rounded-2xl shrink-0">
+            <img
+              src="img/imgCategorias/Category Final-3.svg"
+              alt="Folk category"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute bottom-0 w-full bg-black/80 backdrop-blur-md p-4"
+            >
+              <h2 class="font-bold text-lg text-white">Jazz</h2>
+            </div>
+          </div>
+          <div class="relative w-[242px] overflow-hidden rounded-2xl shrink-0">
+            <img
+              src="img/imgCategorias/Category Final-4.svg.svg"
+              alt="Folk category"
+              class="w-full h-full object-cover"
+            />
+            <div
+              class="absolute bottom-0 w-full bg-black/80 backdrop-blur-md p-4"
+            >
+              <h2 class="font-bold text-lg text-white">Rock</h2>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="artist" class="mt-5 mb-5">
+        <h1 class="font-medium text-[18px] px-5">Artist</h1>
+        <div class="flex gap-4 overflow-x-auto whitespace-nowrap scroll-smooth">
+          <img
+            src="img/artistasCirculos/Ellipse 142.svg"
+            alt="img de un artista circular"
+          />
+          <img
+            src="img/artistasCirculos/Ellipse 143.svg"
+            alt="img de un artista circular"
+          />
+          <img
+            src="img/artistasCirculos/Ellipse 144.svg"
+            alt="img de un artista circular"
+          />
+          <img
+            src="img/artistasCirculos/Ellipse 145.svg"
+            alt="img de un artista circular"
+          />
+          <img
+            src="img/artistasCirculos/Ellipse 146.svg"
+            alt="img de un artista circular"
+          />
+          <img
+            src="img/artistasCirculos/Ellipse 147.svg"
+            alt="img de un artista circular"
+          />
+          <img
+            src="img/artistasCirculos/Ellipse 148.svg"
+            alt="img de un artista circular"
+          />
+        </div>
+      </section>
+
+      <section class="bg-[#515162] py-4 px-5">
+        <h1 class="font-medium text-[18px] text-white">
+          The latest in music, tours & artists
+        </h1>
+
+        <div
+          class="relative w-[328px] h-[312px] mt-4 mx-auto overflow-hidden rounded-2xl z-10"
+        >
+          <img
+            class="w-full h-full object-cover"
+            src="img/latestNewsImg/Frame 427319946.svg"
+            alt="img del banner de una señora cantando"
+          />
+
+          <div
+            class="absolute bottom-0 w-full bg-white/80 backdrop-blur-md p-4"
+          >
+            <div class="text-[#A3A3AF] flex felx-row justify-between">
+              <p>105 Commets</p>
+              <p class="flex">
+                <img
+                  src="img/latestNewsImg/eye.svg"
+                  alt="icono ojo views"
+                />100K
+              </p>
+            </div>
+            <p class="text-gray-700 w-full text-[14px]">
+              Ariana Grande: A Pop Sensation Redefining the Music Industry
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h1 class="font-medium text-[18px] px-5">What our customers say</h1>
+        <p class="font-medium text-[14px] px-5">Real reviews from concert enthusiasts who love our service</p>
+
+        <div class="container">
+
+          <div class="card border-2 border-[#3D3D49]">
+          
+            <div class="flex flex-row ">
+              <h1 class="text-[16px]">Paula Green </h1>
+              <img src="img/reviewProfileImg/Review Image-2.svg" alt="img profile">
+            </div>
+
+            <p class="text-[14px]">I have bought my tickets  from Concerthub many times, the experience is smooth and easy, having the ticket saved in my application was calming, plus I can easily save or share my favourite concerts! recommended!</p>
+          </div>
+
+        </div>
+
+
+      </section>
+    </main>
+  </body>
+</html>
