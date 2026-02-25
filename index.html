@@ -15,17 +15,15 @@
       }
     </style>
   </head>
-  <body class="w-screen h-screen text-inter text-[#282831]">
+  <body class="w-full min-h-screen overflow-x-hidden text-inter text-[#282831]">
     <header class="w-full h-10 md:h-[136px] pt-3">
       <nav class="w-full h-full flex justify-between items-center px-10">
-        <!-- Logo -->
         <img
           src="img/header/Logo.svg"
           alt="Logo"
           class="md:w-48 md:h-14 w-18 h-[22px]"
         />
 
-        <!-- Nav desktop -->
         <ul class="hidden md:flex gap-8 items-center">
           <li class="flex items-center gap-2">
             <img src="img/header/call.svg" alt="icon Phone" /> Contact us
@@ -49,7 +47,6 @@
           </li>
         </ul>
 
-        <!-- Nav mobile -->
         <ul class="flex md:hidden gap-4 items-center">
           <li>
             <img src="img/header/profile-circle.svg" alt="icono perfil" />
@@ -62,9 +59,8 @@
     </header>
     <main>
       <section id="baner" class="relative">
-        <!-- Banner -->
         <div
-          class="relative w-[328px] h-[312px] mt-4 mx-auto overflow-hidden rounded-2xl z-10"
+          class="relative w-[328px] md:w-[80%] h-[312px] md:h-[400px] mt-4 mx-auto overflow-hidden rounded-2xl z-10"
         >
           <img
             class="w-full h-full object-cover"
@@ -85,7 +81,7 @@
           id="search"
           class="bg-[#3D3D49] h-[168px] -mt-10 pt-14 relative z-0"
         >
-          <div class="w-[328px] mx-auto flex flex-col gap-4">
+          <div class="w-[328px] md:w-[80%] mx-auto flex flex-col gap-4">
             <input
               type="text"
               placeholder="Search by Artist, Event or Venue"
@@ -113,16 +109,14 @@
       </section>
 
       <section id="upcoming-concerts" class="w-full py-2">
-        <div class="flex justify-between p-5">
+        <div class="flex justify-between md:justify-start md:gap-5 p-5">
           <h1 class="font-medium text-[18px]">Upcoming concerts</h1>
           <a href="#" class="font-normal text-[18px]">See All</a>
         </div>
 
-        <div
-          class="flex gap-4 px-5 overflow-x-auto whitespace-nowrap scroll-smooth"
-        >
+        <div class="flex gap-4 px-5 overflow-x-auto md:h-fit">
           <div class="card min-w-[242px]">
-            <div class="rounded-md h-40 overflow-x-hidden">
+            <div class="rounded-md h-40 md:h-full overflow-x-hidden">
               <img
                 src="img/artistas/Frame 427319938.svg"
                 alt=""
@@ -141,7 +135,7 @@
           </div>
 
           <div class="card min-w-[242px]">
-            <div class="rounded-md h-40 overflow-x-hidden">
+            <div class="rounded-md h-40 md:h-full overflow-x-hidden">
               <img
                 src="img/artistas/Frame 427319938-7.svg"
                 alt=""
@@ -160,7 +154,7 @@
           </div>
 
           <div class="card min-w-[242px]">
-            <div class="rounded-md h-40 overflow-x-hidden">
+            <div class="rounded-md h-40 md:h-full overflow-x-hidden">
               <img
                 src="img/artistas/Frame 427319938-2.svg"
                 alt=""
@@ -179,7 +173,7 @@
           </div>
 
           <div class="card min-w-[242px] mb-2">
-            <div class="rounded-md h-40 overflow-x-hidden">
+            <div class="rounded-md h-40 md:h-full overflow-x-hidden">
               <img
                 src="img/artistas/Frame 427319938-6.svg"
                 alt=""
@@ -200,16 +194,16 @@
       </section>
 
       <section class="w-full py-2">
-        <div class="flex justify-between p-5">
-          <h1 class="font-medium text-[18px]">Pupular near you</h1>
+        <div
+          class="flex justify-between md:justify-start md:gap-5 p-5 md:h-fit"
+        >
+          <h1 class="font-medium text-[18px]">Popular near you</h1>
           <a href="#" class="font-normal text-[18px]">See All</a>
         </div>
 
-        <div
-          class="flex gap-4 px-5 overflow-x-auto whitespace-nowrap scroll-smooth"
-        >
+        <div class="flex gap-4 px-5 overflow-x-auto md:h-fit">
           <div class="card min-w-[242px]">
-            <div class="rounded-md h-40 overflow-x-hidden">
+            <div class="rounded-md h-40 md:h-full overflow-x-hidden">
               <img
                 src="img/artistas/Frame 427319938-1.svg"
                 alt=""
@@ -218,7 +212,7 @@
             </div>
 
             <h1 class="text-[16px] w-full text-center font-medium">
-              JeJennifer Lopeznifer
+              Jennifer Lopez
             </h1>
             <p class="text-[14px] w-full text-center">Seattle</p>
             <p class="text-[14px] w-full text-center">Dec 12, 21:00</p>
@@ -228,7 +222,7 @@
           </div>
 
           <div class="card min-w-[242px]">
-            <div class="rounded-md h-40 overflow-x-hidden">
+            <div class="rounded-md h-40 md:h-full overflow-x-hidden">
               <img
                 src="img/artistas/Frame 427319938-3.svg"
                 alt=""
@@ -247,7 +241,7 @@
           </div>
 
           <div class="card min-w-[242px]">
-            <div class="rounded-md h-40 overflow-x-hidden">
+            <div class="rounded-md h-40 md:h-full overflow-x-hidden">
               <img
                 src="img/artistas/Frame 427319938-5.svg"
                 alt=""
@@ -264,7 +258,7 @@
           </div>
 
           <div class="card min-w-[242px] mb-2">
-            <div class="rounded-md h-40 overflow-x-hidden">
+            <div class="rounded-md h-40 md:h-full overflow-x-hidden">
               <img
                 src="img/artistas/Frame 427319938-4.svg"
                 alt=""
@@ -283,11 +277,9 @@
       </section>
 
       <section>
-        <h1 class=" px-5 font-medium text-[18px]">Explore by category</h1>
+        <h1 class="px-5 font-medium text-[18px]">Explore by category</h1>
 
-        <div
-          class="flex gap-4 p-4 overflow-x-auto whitespace-nowrap scroll-smooth"
-        >
+        <div class="flex gap-4 p-4 overflow-x-auto md:h-fit">
           <div class="relative w-[242px] overflow-hidden rounded-2xl shrink-0">
             <img
               src="img/imgCategorias/Category Final.svg"
@@ -353,7 +345,7 @@
 
       <section id="artist" class="mt-5 mb-5">
         <h1 class="font-medium text-[18px] px-5">Artist</h1>
-        <div class="flex gap-4 overflow-x-auto whitespace-nowrap scroll-smooth">
+        <div class="flex gap-4 overflow-x-auto md:h-fit">
           <img
             src="img/artistasCirculos/Ellipse 142.svg"
             alt="img de un artista circular"
@@ -386,12 +378,12 @@
       </section>
 
       <section class="bg-[#515162] py-4 px-5">
-        <h1 class="font-medium text-[18px] text-white">
+        <h1 class="font-medium text-[18px] text-white md:text-center">
           The latest in music, tours & artists
         </h1>
 
         <div
-          class="relative w-[328px] h-[312px] mt-4 mx-auto overflow-hidden rounded-2xl z-10"
+          class="relative w-[328px] md:w-[80%] h-[312px] md:h-[450px] mt-4 mx-auto overflow-hidden rounded-2xl z-10"
         >
           <img
             class="w-full h-full object-cover"
@@ -402,7 +394,7 @@
           <div
             class="absolute bottom-0 w-full bg-white/80 backdrop-blur-md p-4"
           >
-            <div class="text-[#A3A3AF] flex felx-row justify-between">
+            <div class="text-[#A3A3AF] flex flex-row justify-between">
               <p>105 Commets</p>
               <p class="flex">
                 <img
@@ -426,9 +418,7 @@
           Real reviews from concert enthusiasts who love our service
         </p>
 
-        <div
-          class="flex gap-6 mt-4 px-5 pt-14 pb-6 overflow-x-auto whitespace-nowrap scroll-smooth"
-        >
+        <div class="flex gap-6 mt-4 px-5 pt-14 pb-6 overflow-x-auto md:h-fit">
           <div
             class="relative bg-white border border-[#3D3D49] rounded-[20px] p-6 w-[340px] shrink-0 whitespace-normal"
           >
@@ -519,65 +509,80 @@
         >Have a thought? <img src="img/apps/edit.svg" alt="btn icon edit"
       /></a>
     </main>
-    <footer class="mt-5 bg-[#282831] text-[#FFFFFF] p-5 gap-3 flex flex-col">
-      <h1 class="text-[16px] font-medium">Let's keep in touch</h1>
-      <p class="text-[14px]">Stay updated with ConcertHub's latest news and exclusive offers! </p>
-      <p class="text-[12px]">By subscribing, you agree to our terms & conditions & Privacy policy</p>
-
-      <div>
-        <h1 class="text-[16px] font-medium mt-5 mb-3">ConcertHub</h1>
-        <ul class="gap-2 flex flex-col">
-          <li class="text-[14px]"><a href="#">About us</a></li>
-          <li class="text-[14px]"><a href="#">Careers</a></li>
-          <li class="text-[14px]"><a href="#">Press</a></li>
-          <li class="text-[14px]"><a href="#">Event organizers</a></li>
-          <li class="text-[14px]"><a href="#">Getting there</a></li>
-          <li class="text-[14px]"><a href="#">Privacy policy</a></li>
-          <li class="text-[14px]"><a href="#">Terms & conditions</a></li>
-        </ul>
-      </div>
-      <div>
-        <h1 class="text-[16px] font-medium mt-5 mb-3">Looking for help</h1>
-        <ul class="gap-2 flex flex-col">
-          <li class="text-[14px]"><a href="#">FAQs</a></li>
-          <li class="text-[14px]"><a href="#">Help center</a></li>
-          <li class="text-[14px]"><a href="#">Contact us</a></li>
-          <li class="text-[14px]"><a href="#">Customer service</a></li>
-        </ul>
-      </div>
-
-      <div>
-        <h1 class="text-[16px] font-medium mt-5 mb-3">Looking for more</h1>
-        <ul class="gap-2 flex flex-col">
-          <li class="text-[14px]"><a href="#">Cancelled concerts</a></li>
-          <li class="text-[14px]"><a href="#">Cancellation insurance</a></li>
-          <li class="text-[14px]"><a href="#">Rescheduled events</a></li>
-        </ul>
-      </div>
-
-      <div class="flex flex-row justify-around">
-        <div class="p-2.5 bg-white text-black flex flex-row gap-2 w-fit rounded-xl">
+    <footer class="mt-5 bg-[#282831] text-[#FFFFFF] p-5">
+      <div
+        class="flex flex-col gap-3 md:flex-row md:w-8/10 md:justify-center md:gap-10"
+      >
         <div>
-          <img src="img/apps/google-paly.svg" alt="Logo google-paly">
+          <h1 class="text-[16px] font-medium">Let's keep in touch</h1>
+          <p class="text-[14px]">
+            Stay updated with ConcertHub's latest news and exclusive offers!
+          </p>
+          <p class="text-[12px]">
+            By subscribing, you agree to our terms & conditions & Privacy policy
+          </p>
+        </div>
+
+        <div>
+          <h1 class="text-[16px] font-medium mt-5 mb-3">ConcertHub</h1>
+          <ul class="gap-2 flex flex-col">
+            <li class="text-[14px]"><a href="#">About us</a></li>
+            <li class="text-[14px]"><a href="#">Careers</a></li>
+            <li class="text-[14px]"><a href="#">Press</a></li>
+            <li class="text-[14px]"><a href="#">Event organizers</a></li>
+            <li class="text-[14px]"><a href="#">Getting there</a></li>
+            <li class="text-[14px]"><a href="#">Privacy policy</a></li>
+            <li class="text-[14px]"><a href="#">Terms & conditions</a></li>
+          </ul>
         </div>
         <div>
-          <p class="text-[8px] text-black">Download on the</p>
-          <h1 class="text-[12px] text-black">Goolge Play</h1>
+          <h1 class="text-[16px] font-medium mt-5 mb-3">Looking for help</h1>
+          <ul class="gap-2 flex flex-col">
+            <li class="text-[14px]"><a href="#">FAQs</a></li>
+            <li class="text-[14px]"><a href="#">Help center</a></li>
+            <li class="text-[14px]"><a href="#">Contact us</a></li>
+            <li class="text-[14px]"><a href="#">Customer service</a></li>
+          </ul>
         </div>
-      </div>
-      <div class="p-2.5 bg-white text-black flex flex-row gap-2 w-fit rounded-xl">
+
         <div>
-          <img src="img/apps/apple.svg" alt="Logo google-paly">
+          <h1 class="text-[16px] font-medium mt-5 mb-3">Looking for more</h1>
+          <ul class="gap-2 flex flex-col">
+            <li class="text-[14px]"><a href="#">Cancelled concerts</a></li>
+            <li class="text-[14px]"><a href="#">Cancellation insurance</a></li>
+            <li class="text-[14px]"><a href="#">Rescheduled events</a></li>
+          </ul>
         </div>
-        <div>
-          <p class="text-[8px] text-black">Download on the</p>
-          <h1 class="text-[12px] text-black">App Store</h1>
+
+        <div class="flex flex-row md:flex-col md:gap-10 justify-around">
+          <div
+            class="p-2.5 bg-white text-black flex flex-row gap-2 w-fit h-fit rounded-xl"
+          >
+            <div>
+              <img src="img/apps/google-paly.svg" alt="Logo google-paly" />
+            </div>
+            <div>
+              <p class="text-[8px] text-black">Download on the</p>
+              <h1 class="text-[12px] text-black">Goolge Play</h1>
+            </div>
+          </div>
+          <div
+            class="p-2.5 bg-white text-black flex flex-row gap-2 w-fit h-fit rounded-xl"
+          >
+            <div>
+              <img src="img/apps/apple.svg" alt="Logo google-paly" />
+            </div>
+            <div>
+              <p class="text-[8px] text-black">Download on the</p>
+              <h1 class="text-[12px] text-black">App Store</h1>
+            </div>
+          </div>
         </div>
-      </div>
       </div>
 
-
-      <h1 class="w-full text-center">© ConcertHub All Rights Reserved</h1>
+      <h1 class="w-full text-center md:mt-10">
+        © ConcertHub All Rights Reserved
+      </h1>
     </footer>
   </body>
 </html>
